@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Days of quarantine</title>
+<head>
+<body>
+<br><br><br><br><br><br><br><br><br>
+<center><h3>Quarantine started on March 16 2020</h3><br>
+<h1>It has been <span id="date"></span> since quarantine started</h1><br>
+<h3>Or, <span id="date1"></span></h3></center>
+<script type="text/javascript">
+var y = new Date();
+var m = new Date();
+var d = new Date();
+var h = new Date();
+var mi = new Date();
+var s = new Date();
+y = y.getFullYear() - 2020;
+m = m.getMonth() - 2;
+d = d.getDate() - 16;
+h = h.getHours() + 1;
+mi = mi.getMinutes() + 1;
+s = s.getSeconds() + 1;
+document.getElementById("date").innerHTML = y + " Year(s), " + m + " Month(s), " + d + " Day(s)";
+document.getElementById("date1").innerHTML = y + " Year(s), " + m + " Month(s), " + d + " Day(s), " + h + " Hour(s), " + mi + " Minute(s), " + s + " Second(s)";
+</script>
+<meta http-equiv="refresh" content="2">
+</body>
+</html>

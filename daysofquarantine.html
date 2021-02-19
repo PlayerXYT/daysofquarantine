@@ -9,22 +9,17 @@
 <h3>Or, <span id="date1"></span></h3><br>
 <h5>Or, Too long!</h5></center>
 <script type="text/javascript">
-var y = new Date();
-var m = new Date();
-var d = new Date();
-var h = new Date();
-var mi = new Date();
-var s = new Date();
-y = y.getFullYear() - 2020;
-m = m.getMonth() - 2;
-d = d.getDate() - 16;
-h = h.getHours() + 1;
-mi = mi.getMinutes() + 1;
-s = s.getSeconds() + 1;
+setInterval(new function() {
+y = new Date().getFullYear() - 2020;
+m = new Date().getMonth() - 2;
+d = new Date().getDate() - 16;
+h = new Date().getHours() + 1;
+mi = new Date().getMinutes() + 1;
+s = new Date().getSeconds() + 1;
 document.getElementById("date").innerHTML = y + " Year(s), " + m + " Month(s), " + d + " Day(s)";
 document.getElementById("date1").innerHTML = y + " Year(s), " + m + " Month(s), " + d + " Day(s), " + h + " Hour(s), " + mi + " Minute(s), " + s + " Second(s)";
+});
 </script>
-<meta http-equiv="refresh" content="2">
 <div style="position:absolute;top:690px;left:1405px;"><button onclick="window.open('https://github.com/PlayerXYT/daysofquarantine');">See on github</button></div>
 </body>
 </html>
